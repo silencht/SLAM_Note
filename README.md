@@ -6,7 +6,7 @@
 
 [CMake_Practice：介绍CMake使用的小册子](./book/CMake_Practice.pdf)
 
-[quaternion：介绍四元数与三位旋转的小册子](./book/quaternion.pdf)
+[quaternion：介绍四元数与三维旋转的小册子](./book/quaternion.pdf)
 
 ### 2、note
 
