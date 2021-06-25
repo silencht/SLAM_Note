@@ -16,6 +16,8 @@
 
 [名词解释：inertial_navigation](./note/inertial_navigation.md)
 
+[ORB_SLAM3代码流程注释（Xmind格式）](./note/ORB_SLAM3_Code_Comment/orbslam3.xmind)
+
 ### 3、paper
 
 >paper目录用来存档自己看过的论文源本，以及论文摘注表；
