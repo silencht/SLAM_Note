@@ -72,6 +72,7 @@ sudo apt install python-rosdep
 With the following, you can initialize `rosdep`.
 
 ```bash
+# 若因网络问题执行不通，利用rosdep_update.md文件解决
 sudo rosdep init
 rosdep update
 ```
