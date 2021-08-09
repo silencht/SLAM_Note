@@ -1,4 +1,4 @@
-## 2ROS rosdep update报错解决方法
+## ROS rosdep update报错解决方法
 
 ### 一、问题描述
 
