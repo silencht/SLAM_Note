@@ -1,4 +1,6 @@
-## 一、问题描述：
+## GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported
+
+
 
 ### 1、环境描述
 
