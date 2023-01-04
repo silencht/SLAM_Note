@@ -20,7 +20,7 @@ using namespace std;
     a,b,c为待优化曲线参数，w为高斯噪声，满足分布：w~(0,\sigma^2)。现假设有N个已知的关于x，y的观测数据点，根据这些点求出曲线的参数a,b,c
     构建最小二乘问题：  min(a,b,c)  \sum_{i=1}^{N} || y_i - exp(a * x_i^2 + b * x_i + c) ||^2 
     定义残差为 e_i = y_i - exp(a * x_i^2 + b * x_i + c)
-    求残差对每个待优化变量的倒数：
+    求残差对每个待优化变量的导数：
         de_i/da = - x_i^2 * exp(a * x_i^2 + b * x_i + c)
         de_i/db = - x_i   * exp(a * x_i^2 + b * x_i + c)
         de_i/dc = -         exp(a * x_i^2 + b * x_i + c)
@@ -108,8 +108,7 @@ int main(int argc, char **argv) {
   typedef g2o::LinearSolverDense<BlockSolverType::PoseMatrixType> LinearSolverType; // 线性求解器类型
 
   // 梯度下降方法，可以从GN, LM, DogLeg 中选
-  auto solver = new g2o::OptimizationAlgorithmGaussNewton(
-    g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
+  auto solver = new g2o::OptimizationAlgorithmGaussNewton(g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
   g2o::SparseOptimizer optimizer;     // 图模型
   optimizer.setAlgorithm(solver);   // 设置求解器
   optimizer.setVerbose(true);       // 打开调试输出

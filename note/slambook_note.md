@@ -89,6 +89,8 @@ $$
 \vec a ={\vec e_2}^{T}\cdot a_2
 $$
 即：
+
+
 $$
 {\vec e_1}^{T} \cdot a_1 ={\vec e_2}^{T}\cdot a_2
 $$
